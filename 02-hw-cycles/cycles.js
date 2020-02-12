@@ -1,7 +1,7 @@
 let N = +prompt("Введіть число N");
 console.log(N);
 
-while (!(isNaN(N)==false && Number.isInteger(N))){
+while (N == NaN || (N - Math.floor(N) != 0) || N == ""){
     N = +prompt("Введіть число N ще раз");
 }
 
