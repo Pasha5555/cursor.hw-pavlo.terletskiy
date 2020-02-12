@@ -33,5 +33,5 @@ if(skipPair){
     skipPair="не пропускаючи парні";
 }
 
-let result = document.writeln(`<strong>Сума чисел від N до M, ${skipPair} = ${sum}</strong>`); 
+let result = document.writeln(`<strong>Сума чисел від N до M, ${skipPair} = ${sum}</strong>`);
 
