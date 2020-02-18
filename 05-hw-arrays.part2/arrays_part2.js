@@ -45,3 +45,6 @@ function replaceBadWords(string, ...badWords){
     return string.join(" ");   
 }
 console.log(replaceBadWords("Are you fucking sucking kidding bitch?", "fuck", "suck", "shit", "bitch"));
+
+
+
