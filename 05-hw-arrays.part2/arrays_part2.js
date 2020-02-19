@@ -17,6 +17,20 @@ function getAverage(...numbers){
 }
 console.log(getAverage(20,-40,50, 3.75, 2.5, 30));
 
+//4.
+function getMedian(...numbers){
+    numbers = (numbers.filter(numb => (parseFloat(numb) - parseInt(numb) === 0))).sort((a,b)=>a-b);
+    let middle;
+    if(numbers.length%2==1){
+    middle = numbers.length/2 - 0.5;
+    return numbers[middle];
+    } else{
+        midle = numbers.length/2;
+        return (numbers[middle] + numbers[middle++])/2;
+    }
+}
+console.log(getMedian(6, 2, 55, 8.441, 23.05, 11, 78, 2, 55, 5.75, 77, 57, 87, 23, 2, 56, 3, 2, 2.3));
+
 //5.
 filterEvenNumbers = (...numbers) => numbers.filter( num => num%2 !== 0); 
 console.log(filterEvenNumbers(1, 2, 3, 4, 5, 6));
@@ -46,5 +60,18 @@ function replaceBadWords(string, ...badWords){
 }
 console.log(replaceBadWords("Are you fucking sucking kidding bitch?", "fuck", "suck", "shit", "bitch"));
 
-
-
+//9.
+function divideByThree(word){
+    let separate = [];
+    word = (word.toLowerCase().split("")).filter(every => every !== " ");
+    if(word.length>3){
+        for(let i = 0; i<word.length; i++){
+            while(word.length){
+                separate.push(word.splice(0, 3).join("")); 
+            } 
+        }
+    } else return word.join("");
+    
+    return separate;
+}
+console.log(divideByThree("Comman de r "));
