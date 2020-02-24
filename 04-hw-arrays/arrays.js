@@ -9,7 +9,7 @@ function getPairs() {
     const girls = ["Лена", "Ира", "Светлана"];
     let newStudents = [];
     for (let i = 0; i < students.length/2; i++) {
-        newStudents.push([boys[i],girls[i]]);
+        newStudents[i] = [boys[i],girls[i]];
     }
     return newStudents;
   }
@@ -20,7 +20,7 @@ console.log(pairs);
 function themesForStudents(){
     let studentsWithThemes = [];
     for(i = 0; i < pairs.length; i++){
-        studentsWithThemes.push([pairs[i].join(" и "), themes[i]]);
+        studentsWithThemes[i] = [pairs[i].join(" и "), themes[i]];
     }
     return studentsWithThemes;
 }
@@ -55,12 +55,3 @@ document.writeln(
     <strong> 3. Оцінювання кожного студента: <br></strong> ${studentsMarks.join(" |<br>")} |<br><br>
     <strong> 4. Оцінювання кожної пари: <br></strong> ${pairsMarks.join(" |<br>")} |<br><br>`
 );
-
-
-
-
-
-
-
-
-
