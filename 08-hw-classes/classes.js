@@ -13,7 +13,10 @@ class Student{
     set setMark(numb){
         if(this.marks === null){
             return null;
-        }else return this.marks.push(numb);
+        }else{
+            this.marks = [...this.marks, numb];
+            return this.marks;
+        }
     }
 
     get getMark(){
