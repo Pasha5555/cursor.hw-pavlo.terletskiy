@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>StarWars</title>
+    <link rel="stylesheet" href="server.css">
+</head>
+<body>
+<h1 class="starWars">Star Wars</h1>
+<br>
+<div class="form">
+    <input class="inputEpisode" placeholder="input episode(1-7)" type="text">
+    <button class="buttonInfo" type="button">Get Characters</button>
+</div>
+<br><br>
+<div class="characters"></div>
+<h1 class = "header2">PLANETS:</h2>
+<div class="planets"></div>
+<br>
+<div class="button">
+    <center><button class="back buttonInfo" type="button">Back</button>
+    <button class="next buttonInfo" type="button">Next</button></center>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./server.js"></script>
+</body>
+</html>
