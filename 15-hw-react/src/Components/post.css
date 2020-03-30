@@ -1,0 +1,93 @@
+.Container{
+    display: flex;
+    width: 900px;
+    height: 550px;
+    background-color: #15202B;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2rem;
+    border-radius: 10px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    border-style: groove;
+}
+
+.ava{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px; 
+    border: 3px solid black;
+    box-shadow: 0 0 5px rgb(122, 122, 160); 
+}
+.Ava_position{
+    display: flex;
+    margin: 3%;
+}
+
+.header_data{
+    display: flex;
+    height: 100px;
+    margin-top: 20px;
+    
+}
+.ikon_position{
+    margin-top: -17px;
+    width: 0px;
+    height: 40px;
+    margin-right: px;
+}
+.ikon{
+    width:100px;
+    margin-left: 168px;
+}
+h3{
+    color: rgb(93, 93, 133);;
+    margin-left: 40px;
+}
+.header_block {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    margin-top: 20px;
+} 
+.header_data,
+.message {
+    display: flex;
+    line-height: 0;
+  }
+.message {
+    font-size: 1.3rem;
+}
+
+.photo_position{
+    margin-top: 10px;
+    width: 95%;
+    height: 70%;
+
+}
+.photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.main_content{
+    max-width: 80%;
+    height: 95%;
+    margin-top: -13px;
+}
+
+.footer{
+    margin-top: 15px;
+    margin-right: 35px;
+ }
+i{
+    margin-right: 120px;
+    color: rgb(122, 122, 160);
+    cursor: pointer;
+}
+span{
+    margin-left: 5px;
+    color: rgb(167, 167, 201);
+}
